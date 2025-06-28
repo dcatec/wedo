@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src * data:;">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <title>Landing Page Segura</title>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+  
+  <section class="min-h-screen flex flex-col justify-center items-center px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Transforme seu Negócio Agora</h1>
+    <p class="text-lg md:text-xl mb-8 max-w-xl">Receba um material exclusivo gratuito e aprenda como gerar mais leads com segurança e performance.</p>
+    
+    <form class="bg-white shadow-xl rounded-2xl p-6 w-full max-w-md space-y-4" method="POST" action="/api/lead">
+      <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 border rounded-xl">
+      <input type="email" name="email" placeholder="Seu melhor e-mail" required class="w-full p-3 border rounded-xl">
+      <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition">Quero Receber</button>
+    </form>
+
+    <p class="text-xs text-gray-500 mt-4">Seus dados estão seguros. Não enviamos spam. 🔒</p>
+  </section>
+
+  <script>
+    // Detecção de resolução (exemplo)
+    console.log("Resolução atual:", window.innerWidth + "x" + window.innerHeight);
+  </script>
+</body>
+</html>
